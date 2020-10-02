@@ -25,4 +25,9 @@ def lines_printed_random(lines_list):
         print(line)
     infile.close
 
-lines_printed_random(bonedog)
+def lines_printed_custom(lines_list):
+    infile = open(lines_list)
+    for line in sorted(infile):
+        print(line, end='')
+
+lines_printed_custom(bonedog)
